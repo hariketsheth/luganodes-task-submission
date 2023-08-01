@@ -69,7 +69,9 @@ export function Login({loginWithGoogle, loginWithEmailAndPassword}: Props) {
                                     Login
                                 </span>
                 </button>
-                <p className="border-t border-gray-100 pt-6 text-center text-sm text-gray-500">
+                <p className="border-t border-gray-10 pt-0.1 text-center text-sm text-gray-500">
+                    <Link href="/reset-password" className="text-black">Reset Password</Link>
+                    <br></br>
                     Don't have an account ?<Link href="/sign-up" className="text-black"> Sign up</Link>
                 </p>
             </form>
