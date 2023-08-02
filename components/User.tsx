@@ -118,12 +118,12 @@ export function UserComponent({ currentUser }: Props) {
             currentUser.emailVerified &&
             !verifyIfUserIsEnrolled(currentUser) && (
               <div>
-                {/*<Link
+                <Link
               className="hover:text-black underline text-center w-full"
               href="/mfa"
             >
               Activate the multifactor authentication
-        </Link> */}
+        </Link> 
                 <div className="space-y-4">
                   <div className="relative flex items-center">
                     <TextAa

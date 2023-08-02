@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className='flex flex-col gap-y-2 mb-5'>
             <h2 className='pb-4'>You can find the video via links below 👇</h2>
-            <Link className='flex items-center gap-x-4 hover:underline text-base' href=''>
+            <Link className='flex items-center gap-x-4 hover:underline text-base' href='https://drive.google.com/drive/folders/1ZOYWySdwlb_FmSA72C76mnWzpURMi-Y5?usp=sharing'>
                 <YoutubeLogo color="#f70b3e" weight='fill' width={26} height={26} />
                 <span>Video Demonstration</span>
             </Link>

@@ -4,8 +4,9 @@ import {useRouter} from "next/router";
 import {notify} from "@/utils/notify";
 import {useRecaptcha} from "@/hooks/useRecaptcha";
 import {useState} from "react";
-import {MultiFactorResolver} from "@firebase/auth";
+import {MultiFactorResolver, sendPasswordResetEmail, getAuth} from "@firebase/auth";
 import {CodeSignIn} from "@/components/CodeSignIn";
+import { app } from "@/firebase/init";
 
 export default function LoginPage() {
     const router = useRouter();
@@ -32,6 +33,17 @@ export default function LoginPage() {
             await handleMFA(response);
         }
     }
+
+    async function resetPassword(email: string) {
+        try {
+          const auth = getAuth(app);
+          await sendPasswordResetEmail(auth, email);
+          console.log("Password reset email sent successfully!");
+        } catch (error) {
+          console.error("Error sending password reset email:", error);
+        }
+      }
+      
 
     async function handleMFA(response: any) {
         if (response.code === 'auth/multi-factor-auth-required' && recaptcha) {
@@ -61,6 +73,7 @@ export default function LoginPage() {
                 <Login
                     loginWithGoogle={loginWithGoogle}
                     loginWithEmailAndPassword={loginWithEmailAndPassword}
+                    resetPassword={resetPassword}
                 />
             }
             {

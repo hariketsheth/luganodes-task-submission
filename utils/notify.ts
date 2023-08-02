@@ -6,3 +6,10 @@ export function notify(message: string) {
         position: "top-right"
     });
 }
+
+export function notifySuccess(message: string) {
+    toast.success(message, {
+        duration: 3000,
+        position: "top-right"
+    });
+}
