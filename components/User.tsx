@@ -131,7 +131,6 @@ export function UserComponent({ currentUser }: Props) {
                       className="w-6 h-6 absolute left-4 inset-y-0 my-auto"
                     />
                     <input
-                    
                       type="text"
                       name="name"
                       placeholder="Enter your Name"
