@@ -1,0 +1,16 @@
+# docker-compose.yml
+version: '3'
+services:
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    networks:
+      - nextjs-network
+
+networks:
+  nextjs-network:
