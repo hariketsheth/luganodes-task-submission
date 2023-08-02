@@ -1,5 +1,5 @@
 # Luganodes Task Submission
-Luganodes Task 4 - Todo applications with multi-authentication with Email/Password and Web3 Integration
+Luganodes Task 4 - User Profile Management with multi-authentication with Email/Password and Web3 Integration
 
 <p align="center">
 <img width="25%" src="https://i.imgur.com/P6jlxtf.png" alt="logo">
@@ -13,6 +13,17 @@ Web application will provide a flexible authentication system, allowing users to
 
 ## :sparkles:Take a look at our website 
 <p align="center">
+  
+![image](https://github.com/hariketsheth/luganodes-task-submission/assets/72455881/73111b5b-61df-481c-95d0-df3b95b253cc)
+![image](https://github.com/hariketsheth/luganodes-task-submission/assets/72455881/c363f1f4-cbf3-4649-8769-26ae5dce1488)
+![image](https://github.com/hariketsheth/luganodes-task-submission/assets/72455881/0d8582da-198b-4423-b971-679062d5f3ec)
+![image](https://github.com/hariketsheth/luganodes-task-submission/assets/72455881/405db46c-be97-402e-bb2e-e7dc251ec236)
+![image](https://github.com/hariketsheth/luganodes-task-submission/assets/72455881/8fab2b71-d021-425f-acbc-4d63b409a4b6)
+![image](https://github.com/hariketsheth/luganodes-task-submission/assets/72455881/6f34b99e-5647-44ff-b180-d596bf353f30)
+![image](https://github.com/hariketsheth/luganodes-task-submission/assets/72455881/b4b58694-9b7d-4e75-8e48-8761a8b0c24c)
+![image](https://github.com/hariketsheth/luganodes-task-submission/assets/72455881/9c353f99-0525-46e9-bb1c-29eaf25eb392)
+![image](https://github.com/hariketsheth/luganodes-task-submission/assets/72455881/d59c7140-632c-4523-aa83-57383feb64a4)
+
 
 </p>
 
