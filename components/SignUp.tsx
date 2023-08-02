@@ -22,6 +22,8 @@ export function SignUp() {
     const response = await signInWithGoogle();
     if (response !== true) {
       notify("Something went wrong");
+    } else{
+        
     }
   }
 
@@ -35,22 +37,8 @@ export function SignUp() {
       );
       if (!response) {
         notify("Something went wrong.");
-      } else {
-        try {
-          // Create a new document in Firestore with the user's name, email, and password
-          const userRef = doc(
-            collection(db, "users"),
-            getAuth(app).currentUser?.uid
-          );
-          await setDoc(userRef, {
-            email: email.current.value,
-            name: name.current.value
-          });
-        } catch (error) {
-          console.error("Error adding document:", error);
-          notify("Something went wrong while adding the document.");
-        }
-      }
+      } 
+
     }
   }
   return (

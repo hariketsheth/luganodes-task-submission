@@ -3,7 +3,7 @@ import {
   verifyIfUserIsEnrolled,
   verifyUserEmail,
 } from "@/firebase/authentication";
-import { At, GoogleLogo, Password } from "phosphor-react";
+import { At, GoogleLogo, Password, TextAa } from "phosphor-react";
 import { getAuth, User } from "@firebase/auth";
 import Link from "next/link";
 import { notify } from "@/utils/notify";
@@ -65,7 +65,7 @@ export function UserComponent({ currentUser }: Props) {
         Edit Profile 👋
       </h2>
       <p>
-        Hi <b>{userData?.name}</b>{" "}
+        Hi <b>{userData ? userData?.name : "There 💫"}</b> <br></br>
       </p>
       <div>
         <form className="space-y-8">
@@ -114,27 +114,47 @@ export function UserComponent({ currentUser }: Props) {
               </span>
             </div>
           </div>
-          {/*  {currentUser &&
-        currentUser.emailVerified &&
-        !verifyIfUserIsEnrolled(currentUser) && (
-          <div>
-            <Link
+          {currentUser &&
+            currentUser.emailVerified &&
+            !verifyIfUserIsEnrolled(currentUser) && (
+              <div>
+                {/*<Link
               className="hover:text-black underline text-center w-full"
               href="/mfa"
             >
               Activate the multifactor authentication
-            </Link>
-           <button
-            type="submit"
-            className="bg-black rounded-xl flex h-11 w-full items-center justify-center px-6"
-            style={{ background: "#f70b3e" }}
-          >
-            <span className="text-base font-light text-white">
-              Update Profile
-            </span>
-          </button>
-          </div>
-        )} */}
+        </Link> */}
+                <div className="space-y-4">
+                  <div className="relative flex items-center">
+                    <TextAa
+                      style={{ color: "#f70b3e" }}
+                      className="w-6 h-6 absolute left-4 inset-y-0 my-auto"
+                    />
+                    <input
+                    
+                      type="text"
+                      name="name"
+                      placeholder="Enter your Name"
+                      className="focus:outline-none
+                                        block w-full rounded-xl placeholder-gray-500
+                                        bg-gray-100 pl-12 pr-4 h-12 text-gray-600 transition
+                                        duration-300 invalid:ring-2 invalid:ring-red-400
+                                        focus:ring-2 focus:ring-black"
+                    />
+                  </div>
+                </div>
+                <br></br>
+                <button
+                  type="submit"
+                  className="bg-black rounded-xl flex h-11 w-full items-center justify-center px-6"
+                  style={{ background: "#f70b3e" }}
+                >
+                  <span className="text-base font-light text-white">
+                    Update Profile
+                  </span>
+                </button>
+              </div>
+            )}
           {currentUser &&
             !currentUser.emailVerified &&
             !verifyIfUserIsEnrolled(currentUser) && (
