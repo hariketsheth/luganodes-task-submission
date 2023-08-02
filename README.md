@@ -1,5 +1,5 @@
 # Luganodes Task Submission
-Luganodes Task 4 - Todo applications with multi-authentication with Email/Password and Web3 Integration
+Luganodes Task 4 - User Profile Management with multi-authentication with Email/Password and Web3 Integration
 
 <p align="center">
 <img width="25%" src="https://i.imgur.com/P6jlxtf.png" alt="logo">
@@ -13,8 +13,63 @@ Web application will provide a flexible authentication system, allowing users to
 
 ## :sparkles:Take a look at our website 
 <p align="center">
+  
+![image](https://i.imgur.com/2yYtP89.png)
+![image](https://i.imgur.com/U8dJ6jT.png)
+![image](https://i.imgur.com/EYI3ADP.png)
+![image](https://i.imgur.com/od0tBTQ.png)
+![image](https://i.imgur.com/BDLUmLo.png)
+![image](https://i.imgur.com/4YIE0zx.png)
+![image](https://i.imgur.com/ZnrLX0y.png)
+![image](https://i.imgur.com/y4Hr6iF.png)
+![image](https://i.imgur.com/2wQBQhj.png)
+![image](https://i.imgur.com/qtwrSlU.png)
+![image](https://i.imgur.com/7bxwYAJ.png)
+
 
 </p>
+
+## Getting Started
+
+First, install dependecies
+
+```shell
+yarn install
+```
+
+run the development server:
+
+```bash
+yarn dev
+```
+
+## Learn More About Next Js
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+
+## Tech stack & Open-source libraries
+
+- Nodejs
+    - ```node```
+    - ```yarn```
+- TypeScript
+    - ```Typescript```
+- Nextjs
+    - ```Next 13```
+- Backend As A Service
+    - ```Firebase```
+- Style Sheet
+    - ```Tailwindcss```
+- Icons
+    - ```phosphor-react```
+- Toast Notification
+    - ```react-hot-toast```
 
 ## :sparkles: Project Information
 [![Language Used](https://img.shields.io/badge/FrontEnd-NextJs,%20CSS,%20JavaScript,%20JQuery-blue)](https://github.com/hariketsheth/luganodes-task-submission)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
