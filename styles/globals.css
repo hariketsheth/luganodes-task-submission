@@ -11,3 +11,47 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.bg-orange {
+  background-color: rgba(255, 165, 0, 0.2); /* Transparent orange */
+}
+
+.bg-green {
+  background-color: rgba(0, 128, 0, 0.2); /* Transparent green */
+}
+.dot-green {
+  background-color: green;
+  animation: flashGreen 1.5s infinite;
+}
+
+.dot-orange {
+  background-color: orange;
+  animation: flashOrange 1.5s infinite;
+
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+@keyframes flashGreen {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes flashOrange {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
