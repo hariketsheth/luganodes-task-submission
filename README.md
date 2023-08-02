@@ -29,6 +29,48 @@ Web application will provide a flexible authentication system, allowing users to
 
 </p>
 
+## Getting Started
+
+First, install dependecies
+
+```shell
+yarn install
+```
+
+run the development server:
+
+```bash
+yarn dev
+```
+
+## Learn More About Next Js
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+
+## Tech stack & Open-source libraries
+
+- Nodejs
+    - ```node```
+    - ```yarn```
+- TypeScript
+    - ```Typescript```
+- Nextjs
+    - ```Next 13```
+- Backend As A Service
+    - ```Firebase```
+- Style Sheet
+    - ```Tailwindcss```
+- Icons
+    - ```phosphor-react```
+- Toast Notification
+    - ```react-hot-toast```
+
 ## :sparkles: Project Information
 [![Language Used](https://img.shields.io/badge/FrontEnd-NextJs,%20CSS,%20JavaScript,%20JQuery-blue)](https://github.com/hariketsheth/luganodes-task-submission)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Build](https://img.shields.io/badge/build-passing-green)](hhttps://github.com/hariketsheth/luganodes-task-submission)
